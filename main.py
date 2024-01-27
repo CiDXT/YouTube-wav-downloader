@@ -80,7 +80,7 @@ def raise_exception(error_msg, is_webui):
 
 
 
-with gr.Blocks(theme=gr.themes.Soft() as app:
+with gr.Blocks(theme=gr.themes.Soft) as app:
     gr.HTML("<h1> youtube downloader </h1>")
 
 show_yt_link_button = gr.Button('Paste YouTube link/Path to local file instead')
