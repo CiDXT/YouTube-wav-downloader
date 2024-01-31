@@ -19,7 +19,6 @@ from pedalboard.io import AudioFile
 from pydub import AudioSegment
 
 
-output_dir = os.path.join(BASE_DIR, 'song_output')
 
 
 def get_youtube_video_id(url, ignore_playlist=True):
