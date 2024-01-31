@@ -83,9 +83,23 @@ def raise_exception(error_msg, is_webui):
 with gr.Blocks(theme=gr.themes.Soft) as app:
     gr.HTML("<h1> youtube downloader </h1>")
 
-show_yt_link_button = gr.Button('Paste YouTube link/Path to local file instead')
-song_input_file.upload(process_file_upload, inputs=[song_input_file], outputs=[local_file, song_input])
 
+def download_from_url(url, audio_name):
+    ydl.download([url])
 
-download_path = gr.Audio(label='download_path', show_share_button=False)
+def youtube_to_wav(url, audio_name):
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        download_from_url(url, audio_name)
+
+# Gradio interface
+iface = gr.Interface(
+    fn=youtube_to_wav,
+    inputs=["text", "text"],
+    outputs="text",
+    live=True,
+    capture_session=True
+)
+
+# Launch Gradio interface
+iface.launch()
 
