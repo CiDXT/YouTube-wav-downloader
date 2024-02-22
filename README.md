@@ -1,13 +1,13 @@
 ---
-title: Youtube Downloader
+title: Youtube wav Downloader
 emoji: 💻
 colorFrom: indigo
 colorTo: pink
 sdk: gradio
 sdk_version: 4.16.0
-app_file: main.py
+app_file: run.py
 pinned: false
-license: apache-2.0
+license: mit
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
