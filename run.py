@@ -26,7 +26,7 @@ def fetch(url, custom_name, ext):
 
     return filename
 
-interface = gr.Interface(
+app = gr.Interface(
     fn=fetch,
     inputs=[
         gr.Textbox(label="YouTube video address", placeholder="Paste video link here..."),
