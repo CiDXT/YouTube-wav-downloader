@@ -33,7 +33,7 @@ app = gr.Interface(
         gr.Textbox(label="file name", placeholder="Defaults to video title"),
         gr.Dropdown(value="wav", label="format")
     ],
-    outputs=gr.File(label="Download the file! (MP3 files available)"),
+    outputs=gr.File(label="Download the file!"),
     description="<div style='font-size:30px; text-align:center;'>YouTube wav downloader</div>"
 )
 
