@@ -30,7 +30,7 @@ app = gr.Interface(
     fn=fetch,
     inputs=[
         gr.Textbox(label="YouTube video address", placeholder="Paste video link here..."),
-        gr.Textbox(label="file name", placeholder="默认为视频标题"),
+        gr.Textbox(label="file name", placeholder="Defaults to video title"),
         gr.Dropdown(value="wav", label="format")
     ],
     outputs=gr.File(label="Download the file! (MP3 files available)"),
