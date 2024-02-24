@@ -37,4 +37,4 @@ app = gr.Interface(
     description="<div style='font-size:30px; text-align:center;'>YouTube wav downloader</div>"
 )
 
-app.launch()
+app.launch(debug=True, share=True)
