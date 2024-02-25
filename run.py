@@ -32,11 +32,9 @@ def play_audio():
     audio_file_path = {filename}
     return Audio(audio_file_path)
 
-iface = gr.Interface(
-
 app = gr.Interface(
     theme='Hev832/EasyAndCool',
-    fn=fetch, fn=play_audio,
+    fn=fetch,
     inputs=[
         gr.Textbox(label="YouTube video address", placeholder="Paste video link here..."),
         gr.Textbox(label="file name", placeholder="Defaults to video title"),
