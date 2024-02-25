@@ -28,10 +28,6 @@ def fetch(url, custom_name, ext):
     return filename
 
 
-def play_audio():
-    audio_file_path = {filename}
-    return Audio(audio_file_path)
-
 app = gr.Interface(
     theme='Hev832/EasyAndCool',
     fn=fetch,
@@ -41,8 +37,6 @@ app = gr.Interface(
         gr.Dropdown(value="wav", label="format")
     ],
     outputs=gr.File(label="Download the file!"),
-    show=True,
-    capture_session=True),
     description="<div style='font-size:30px; text-align:center;'>YouTube wav downloader</div>"
 )
 
