@@ -1,6 +1,7 @@
 import gradio as gr
 import os
 import subprocess
+from IPython.display import Audio
 
 def get_video_title(url):
     # 使用 yt-dlp 获取视频标题
@@ -26,15 +27,24 @@ def fetch(url, custom_name, ext):
 
     return filename
 
+
+def play_audio():
+    audio_file_path = {filename}
+    return Audio(audio_file_path)
+
+iface = gr.Interface(
+
 app = gr.Interface(
     theme='Hev832/EasyAndCool',
-    fn=fetch,
+    fn=fetch, fn=play_audio,
     inputs=[
         gr.Textbox(label="YouTube video address", placeholder="Paste video link here..."),
         gr.Textbox(label="file name", placeholder="Defaults to video title"),
         gr.Dropdown(value="wav", label="format")
     ],
     outputs=gr.File(label="Download the file!"),
+    show=True,
+    capture_session=True),
     description="<div style='font-size:30px; text-align:center;'>YouTube wav downloader</div>"
 )
 
