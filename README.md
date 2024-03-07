@@ -1,13 +1,18 @@
----
-title: Youtube wav Downloader
-emoji: 💻
-colorFrom: indigo
-colorTo: pink
-sdk: gradio
-sdk_version: 4.16.0
-app_file: run.py
-pinned: false
-license: mit
----
+# Youtube wav Downloader
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+
+
+# how to use
+
+
+```
+pip install gradio yt-dlp
+
+```
+
+
+```
+python run.py
+
+```
