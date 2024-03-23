@@ -29,7 +29,7 @@ def fetch(url, custom_name, ext):
 
 
 app = gr.Interface(
-    theme='Hev832/EasyAndCool',
+    theme='Hev832/soft',
     fn=fetch,
     inputs=[
         gr.Textbox(label="YouTube video address", placeholder="Paste video link here..."),
@@ -37,7 +37,7 @@ app = gr.Interface(
         gr.Dropdown(value="wav", label="format")
     ],
     outputs=gr.Audio(label="Download the file!"),
-    description="<div style='font-size:30px; text-align:center;'>YouTube wav downloader</div>"
+    description="<div style='font-size:30px; text-align:center;'>YouTube wav downloader...</div>"
 )
 
 app.launch(debug=True, share=True)
