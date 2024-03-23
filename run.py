@@ -1,6 +1,5 @@
 import gradio as gr
 import yt_dlp
-import ffmpeg
 
 
 def download_audio(url):
@@ -22,7 +21,7 @@ with gr.Blocks(theme="Hev832/soft", title="yt-dlp") as demo:
     used_letters_var = gr.State([])
     with gr.Column():
         gr.Markdown("# YT_DLP GRADIO DEMO")
-        gr.Markdown("Please press like button to support me :]")
+        gr.Markdown("Please press stars ⭐ button on github to support me :]")
     with gr.Row() as row:
         with gr.Column():
             url = gr.Textbox(label="URL INPUT")
