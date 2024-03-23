@@ -1,7 +1,7 @@
 # Youtube wav Downloader
 
 
-> Please Press stars ⭐ if this repo >
+> Please Press stars ⭐ if this repo
 > helpfull :)
 
 
