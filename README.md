@@ -10,7 +10,7 @@
 # how to use
 
 ```
-git clone https://github.com/CiDXT/Web.git
+git clone https://github.com/CiDXT/YouTube-wav-downloader.git
 ```
 
 ```
